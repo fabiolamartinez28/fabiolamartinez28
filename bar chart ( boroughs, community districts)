@@ -1,0 +1,15 @@
+library(tidyverse)
+view(New_York_City_Population_By_Community_Districts)
+data()
+New_York_City_Population_By_Community_Districts
+names(New_York_City_Population_By_Community_Districts)
+
+ggplot(data = New_York_City_Population_By_Community_Districts, aes(Borough)) +
+  geom_bar(fill = "Blue") +
+  theme_bw() +
+  labs(x = " Boroughs",
+        y = "Community Districts",
+        title = "New York City's Community Districts By Broughs")
+
+    
+  
